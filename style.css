@@ -1,0 +1,83 @@
+body{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 96%;
+    background: linear-gradient(90deg, rgb(253, 240, 240) 50%, rgb(231, 220, 220) 50%);
+    display: grid;
+    justify-content: center;
+    
+}
+
+.section-player-1, .section-player-2, .section-newGame{
+    justify-self: center;
+    margin: 3px;
+    width: 100%;
+}
+.card-score-current{
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: midnightblue;
+    color: mintcream;
+    margin-bottom: 5px;
+}
+
+
+.card-score-global{
+    font-size: 3rem;
+    margin: 4px;
+    color: crimson;
+   font-weight: 600;
+}
+.global-button{
+    display: flex;
+    justify-content: center;
+    
+}
+ion-icon{
+    font-size: 2rem;
+    align-self: center;
+    margin: 8px;
+    color: crimson;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 563px){
+    .container{
+       display: flex;
+        padding: 30px;
+       height: 100vh;
+    }
+    hr{
+        display: none;
+    }
+   .section-player-1, .section-player-2, .section-newGame {
+       display: grid;
+       grid-template-rows: 1fr 1fr 1fr;
+       align-items: center;
+   }
+   h2{
+       font-size: 2.5rem;
+   }
+   .card-score-global{
+       font-size: 7rem;
+   }
+   .card-score-current{
+       place-self: center;
+   }
+   img{
+       margin: 0 auto;
+   }
+   .newGame{
+        align-self: flex-start;
+   }
+   img{
+    width: 200px;
+}
+}

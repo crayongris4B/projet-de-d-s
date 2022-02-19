@@ -4,46 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FRAMEWORK IONIC -->
     <link rel="stylesheet" href="style.css">
     <title>Jeu de dés</title>
 </head>
 <body>
     <main class="container">
         <section class="section-player-1">
-            <h2>Player 1</h2>
-            <p></p>
-            <div>
+            <h2 id="name1">JOUEUR 1</h2>
+            <p class="card-score-global" id="global0">0</p>
+            <div class="card-score-current">
                 <h3>SCORE COURANT</h3>
-                <p></p>
+                <p id="current0">0</p>
             </div>
         </section>
         <section class="section-newGame">
-            <div>
-                <div></div>
-                <h2>NOUVEAU JEU</h2>
+             <hr>
+            <div class="global-button newGame" id="newGame">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <h3>NEW GAME</h3>
+                <p>C'est le tour : <span id="affiche"></span> </p>
             </div>
-            <img src="" alt="">
+            <img src="images/dé-1.png" alt="">
             <div>
-                <div>
-                    <div></div>
-                    <h3>ROULEZ LES DÉS</h3>
+                <div class="global-button" id="clouk">
+                    <ion-icon name="sync-outline"></ion-icon>
+                    <p >ROLL DICE</p>
                 </div>
-                <div>
-                    <div></div>
-                    <h2>METTRE DANS LA CAISSE</h2>
+                <div class="global-button" id="hold">
+                    <ion-icon name="download-outline"></ion-icon>
+                    <p >HOLD</p>
                 </div>
             </div>
         </section>
         <section class="section-player-2">
-            <h2>JOUEUR 2</h2>
-            <p></p>
-            <div>
+            <hr>
+            <h2 id="name2">JOUEUR 2</h2>
+            <p class="card-score-global" id="global1">0</p>
+            <div class="card-score-current">
                 <h3>SCORE COURANT</h3>
-                <p></p>
+                <p id="current1">0</p>
             </div>
         </section>
     </main>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="script.js"></script>    
 </body>
 </html>
