@@ -59,7 +59,7 @@ hold.addEventListener('click', () => {
 function nextplayer() {
   globalScore[curentPlayer].textContent = parseInt(globalScore[curentPlayer].textContent) + parseInt(pointCurrent[curentPlayer].textContent);
   pointCurrent[curentPlayer].textContent = 0;
-  if (parseInt(globalScore[curentPlayer].textContent) >= 10) {
+  if (parseInt(globalScore[curentPlayer].textContent) >= 100) {
     Swal.fire(`Bravo ${names[curentPlayer].textContent} vous avez gagné`);
     zero();
   };
