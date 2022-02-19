@@ -15,13 +15,15 @@ body{
     
 }
 #current1, #current0{
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 1px;
 }
 .affiche{
     display: none;
 }
-
+.button-clouk-global{
+    display: flex;
+}
 .section-player-1, .section-player-2, .section-newGame{
     justify-self: center;
     margin: 3px;
@@ -33,12 +35,18 @@ body{
     background-image: linear-gradient(to right top, #b8297b, #b03893, #a348a9, #8f57bd, #7565cd, #5c75da, #3d84e2, #0091e7, #00a2e7, #00b0dd, #00bccd, #13c6ba);
     color: mintcream;
     margin-bottom: 5px;
+    padding: 6px;
+}
+.card-score-current h3{
+    margin: 2px;
 }
 .tour{
     color: #B8297B;
     font-weight: 600;
 }
-
+  img{
+    width: 50px;
+}
 .card-score-global{
     font-size: 3rem;
     margin: 4px;
@@ -57,12 +65,15 @@ ion-icon{
     color: crimson;
     font-weight: bold;
 }
+h2{
+    font-size: 1rem;
+}
 
 @media screen and (min-width: 563px){
     .container{
-       display: flex;
+        display: flex;
         padding: 30px;
-       height: 100vh;
+        height: 100vh;
     }
     hr{
         display: none;
@@ -93,5 +104,8 @@ ion-icon{
 #current1, #current0{
     font-size: 3rem;
     margin: 1px;
+}
+.button-clouk-global{
+    display: block;
 }
 }
