@@ -36,7 +36,7 @@ turnDiv.textContent = names[curentPlayer].textContent
  */
 clouk.addEventListener('click', () => {
     let random = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
-    imageElem.src = `images/dé-${random}.png`;
+    imageElem.src = `images/de-${random}.png`;
     // condition dice !== 1
     if (random !== 1) {
         affiche.innerHTML = random;
