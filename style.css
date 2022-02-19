@@ -59,17 +59,26 @@ body{
     
 }
 ion-icon{
-    font-size: 2rem;
+    font-size: 3rem;
     align-self: center;
     margin: 8px;
     color: crimson;
     font-weight: bold;
 }
 h2{
-    font-size: 1rem;
+    font-size: 3rem;
+}
+.global-button p{
+    font-weight: 600;
+    align-self: center;
 }
 
 @media screen and (min-width: 563px){
+    
+    ion-icon{
+        font-size: 4rem;
+    }
+    
     .container{
         display: flex;
         padding: 30px;
