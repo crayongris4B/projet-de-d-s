@@ -47,6 +47,9 @@ body{
   img{
     width: 50px;
 }
+h2{
+    font-size: 2rem;
+}
 .card-score-global{
     font-size: 3rem;
     margin: 4px;
@@ -65,9 +68,7 @@ ion-icon{
     color: crimson;
     font-weight: bold;
 }
-h2{
-    font-size: 3rem;
-}
+
 .global-button p{
     font-weight: 600;
     align-self: center;
@@ -93,8 +94,8 @@ h2{
        align-items: center;
    }
    h2{
-       font-size: 2.5rem;
-   }
+    font-size: 3rem;
+    }
    .card-score-global{
        font-size: 7rem;
    }

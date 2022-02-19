@@ -29,6 +29,8 @@ names[1].textContent = "joueur 2" */
 let curentPlayer = 0;
 turnDiv.textContent = names[curentPlayer].textContent
 
+const regle = 'Bienvenue sur ce petit jeu. Le premier à 100 points a gagné !!! QUE 💪 GAGNE !'
+alert(regle);
 /* 
 -> nombre aléatoire
 -> ajoute le nombre dans le score current.
